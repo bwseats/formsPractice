@@ -13,6 +13,7 @@
     
     <!-- custom css -->
     <link href="/css/site.css" rel="stylesheet" />
+    <link href="/css/invoice.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -45,7 +46,94 @@
         </nav>
     </header>
 
-    <main class="content"></main>
+    <main class="content container">
+        <div class="row p-5 align-items-center">
+            <div class="col-8">
+                <img src="/img/IdeaFoundryLogo.svg" />
+            </div>
+            <div class="col-4 text-end">
+                <h3>Invoice</h3>
+            </div>
+            <div class="col-6 mt-3 border-top py-2">
+                <p class="text-start"><b>Date:</b> 05/12/2019</p>
+            </div>
+            <div class="col-6 mt-3 border-top py-2">    
+                <p class="text-end"><b>Invoice No.</b> 19005</p>
+            </div>
+            <div class="col-6 border-top p-3">
+                <p class="text-start"><b>Invoiced To:</b></p>
+            </div>
+            <div class="col-6 border-top p-3">
+                <p class="text-end"><b>Pay To:</b></p>
+            </div>
+            <div class="col-6">
+                <p class="text-start m-0">Mark Davis</p>
+                <p class="text-start m-0">3133 Al Davis Way</p>
+                <p class="text-start m-0">Las Vegas, NV 89118</p>
+            </div>
+            <div class="col-6">
+                <p class="text-end m-0">Idea Foundry, Inc.</p>
+                <p class="text-end m-0">2705 N. Enterprise St</p>
+                <p class="text-end m-0">Kernersville, NC 27284</p>
+                <p class="text-end m-0">contact@IdeaFoundryInc.com</p>
+            </div>
+            <div class="col-12 table-responsive">
+                <table class="table table-bordered mt-4">
+                    <tr class="tableHeader">
+                        <th colspan="2" height="20">Service</th>
+                        <th>Description</th>
+                        <th>Rate</th>
+                        <th>QTY</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr class="oddRow">
+                        <td colspan="2">Design</td>
+                        <td>Website Design</td>
+                        <td>$60.00</td>
+                        <td>10</td>
+                        <td>$600.00</td>
+                    </tr>
+                    <tr class="evenRow">
+                        <td colspan="2">Development</td>
+                        <td>Website Development</td>
+                        <td>$150.00</td>
+                        <td>10</td>
+                        <td>$1500.00</td>
+                    </tr>
+                    <tr class="oddRow">
+                        <td colspan="2">Deployment</td>
+                        <td>Deployment and Hosting</td>
+                        <td>$450.00</td>
+                        <td>1</td>
+                        <td>$600.00</td>
+                    </tr>
+                    <tfoot>
+                        <td class="text-end" colspan="5"><b>Total:</b></td>
+                        <td>$2550.00</td>
+                    </tfoot>
+                    <tfoot>
+                        <td class="text-end" colspan="5"><b>Subtotal:</b></td>
+                        <td>$2550.00</td>
+                    </tfoot>
+                    <tfoot>
+                        <td class="text-end" colspan="5"><b>Tax:</b></td>
+                        <td>$0.00</td>
+                    </tfoot>
+                </table>
+                <div class="text-center">
+                    <p><b>NOTE:</b> This is a computer generated receipt and does not require a physical signature.</p>
+                </div>
+                <div>
+                    <button type="submit" 
+                        class="btn btn-primary text-end"
+                        id="printbutton"
+                        onclick="print()">
+                        Print page
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="bg-dark text-light py-3 container-fluid mt-5">
         <div class="row row-cols-1 row-cols-md-3 gy-2">
@@ -59,5 +147,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="print.js"></script>
 </body>
 </html>

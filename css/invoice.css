@@ -1,0 +1,25 @@
+.container {
+    border: solid 1px;
+}
+
+.container-fluid {
+    border: solid 1px;
+}
+
+.tableHeader {
+    background-color: #181818;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.oddRow {
+    background-color: lightgray;
+}
+
+.evenRow {
+    background-color: whitesmoke;
+}
+
+table {
+    width: 90%
+}
