@@ -1,5 +1,6 @@
 .container {
     border: solid 1px;
+    break-inside: avoid;
 }
 
 .container-fluid {
