@@ -6,20 +6,35 @@
     border: solid 1px;
 }
 
+body{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+}
+
 .tableHeader {
-    background-color: #181818;
+    background-color: #1d4f63;
     color: whitesmoke;
     font-size: 1.5em;
 }
 
 .oddRow {
-    background-color: lightgray;
+    background-color: #e7dcdc;
 }
 
 .evenRow {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 
 table {
     width: 90%
+}
+
+@media print {
+    .noprint {
+        visibility: hidden;
+    }
+}
+
+.wrap {
+    word-wrap: break-word;
 }

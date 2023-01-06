@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark noprint">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">bootstrap forms</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,79 +54,77 @@
             <div class="col-4 text-end">
                 <h3>Invoice</h3>
             </div>
-            <div class="col-6 mt-3 border-top py-2">
+            <div class="col-6 pt-3 mt-3 mb-0 border-top border-bottom">
                 <p class="text-start"><b>Date:</b> 05/12/2019</p>
             </div>
-            <div class="col-6 mt-3 border-top py-2">    
+            <div class="col-6 pt-3 mt-3 mb-0 border-top border-bottom">    
                 <p class="text-end"><b>Invoice No.</b> 19005</p>
             </div>
-            <div class="col-6 border-top p-3">
-                <p class="text-start"><b>Invoiced To:</b></p>
-            </div>
-            <div class="col-6 border-top p-3">
-                <p class="text-end"><b>Pay To:</b></p>
-            </div>
-            <div class="col-6">
-                <p class="text-start m-0">Mark Davis</p>
+            <div class="col-6 pt-0 mt-0">
+                <p class="text-start m-0"><b>Invoiced To:</b></p>
+                <p class="text-start m-0" >Mark Davis</p>
                 <p class="text-start m-0">3133 Al Davis Way</p>
                 <p class="text-start m-0">Las Vegas, NV 89118</p>
             </div>
-            <div class="col-6">
+            <div class="col-6 pt-2 mt-0">
+                <p class="text-end m-0"><b>Pay To:</b></p>
                 <p class="text-end m-0">Idea Foundry, Inc.</p>
                 <p class="text-end m-0">2705 N. Enterprise St</p>
                 <p class="text-end m-0">Kernersville, NC 27284</p>
-                <p class="text-end m-0">contact@IdeaFoundryInc.com</p>
+                <p class="text-end mb-3 wrap">contact@IdeaFoundryInc.com</p>
             </div>
             <div class="col-12 table-responsive">
-                <table class="table table-bordered mt-4">
-                    <tr class="tableHeader">
-                        <th colspan="2" height="20">Service</th>
+                <table class="table table-bordered">
+                    <tr class="tableHeader" style=font-size:20px>
+                        <th colspan="2" style="width: 400px">Service</th>
                         <th>Description</th>
-                        <th>Rate</th>
-                        <th>QTY</th>
-                        <th>Amount</th>
+                        <th class="text-center">Rate</th>
+                        <th class="text-center">QTY</th>
+                        <th class="text-center">Amount</th>
                     </tr>
                     <tr class="oddRow">
                         <td colspan="2">Design</td>
-                        <td>Website Design</td>
-                        <td>$60.00</td>
-                        <td>10</td>
-                        <td>$600.00</td>
+                        <td>Website<br/>Design</td>
+                        <td class="text-center">$60.00</td>
+                        <td class="text-center">10</td>
+                        <td class="text-center">$600.00</td>
                     </tr>
                     <tr class="evenRow">
                         <td colspan="2">Development</td>
-                        <td>Website Development</td>
-                        <td>$150.00</td>
-                        <td>10</td>
-                        <td>$1500.00</td>
+                        <td>Website<br/>Development</td>
+                        <td class="text-center">$150.00</td>
+                        <td class="text-center">10</td>
+                        <td class="text-center">$1500.00</td>
                     </tr>
                     <tr class="oddRow">
                         <td colspan="2">Deployment</td>
-                        <td>Deployment and Hosting</td>
-                        <td>$450.00</td>
-                        <td>1</td>
-                        <td>$600.00</td>
+                        <td>Deployment<br/>and Hosting</td>
+                        <td class="text-center">$450.00</td>
+                        <td class="text-center">1</td>
+                        <td class="text-center">$600.00</td>
                     </tr>
                     <tfoot>
                         <td class="text-end" colspan="5"><b>Total:</b></td>
-                        <td>$2550.00</td>
+                        <td class="text-end">$2550.00</td>
                     </tfoot>
                     <tfoot>
                         <td class="text-end" colspan="5"><b>Subtotal:</b></td>
-                        <td>$2550.00</td>
+                        <td class="text-end">$2550.00</td>
                     </tfoot>
                     <tfoot>
                         <td class="text-end" colspan="5"><b>Tax:</b></td>
-                        <td>$0.00</td>
+                        <td class="text-end">$0.00</td>
                     </tfoot>
                 </table>
-                <div class="text-center">
-                    <p><b>NOTE:</b> This is a computer generated receipt and does not require a physical signature.</p>
-                </div>
+            </div>
+            <div class="text-center">
+                <p><b>NOTE:</b> This is a computer generated receipt and does not require a physical signature.</p>
+            </div>
+            <div class="col-12">
                 <div>
                     <button type="submit" 
-                        class="btn btn-primary text-end"
-                        id="printbutton"
+                        class="btn btn-primary noprint"
+                        id="printButton"
                         onclick="print()">
                         Print page
                     </button>
@@ -135,7 +133,7 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-light py-3 container-fluid mt-5">
+    <footer class="bg-dark text-light py-3 container-fluid mt-5 noprint">
         <div class="row row-cols-1 row-cols-md-3 gy-2">
             <div class="col text-center text-md-start">built by benjamin seats</div>
             <div class="col text-center">bootstrap forms</div>
